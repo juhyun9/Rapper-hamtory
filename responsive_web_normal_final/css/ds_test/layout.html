@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ds">
+  <head>
+    <meta charset="utf-8">
+    <title>날씨요정</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      #ds-container {
+        width: 940px;
+        margin: 10px auto;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      #ds-header {
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      #ds-content {
+        width: 580px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: left;
+        border: 1px solid #bcbcbc;
+      }
+      #ds-sidebar {
+        width: 260px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: right;
+        border: 1px solid #bcbcbc;
+      }
+      #ds-footer {
+        clear: both;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      @media ( max-width: 480px ) {
+        #ds-container {
+          width: auto;
+        }
+        #ds-content {
+          float: none;
+          width: auto;
+        }
+        #ds-sidebar {
+          float: none;
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ds-container">
+      <div id="ds-header">
+        <h1>Today's Weather</h1>
+      </div>
+      <div id="ds-content">
+        <h2>Jeju</h2>
+        <p>island</p>
+      </div>
+      <div id="ds-sidebar">
+        <h2>Category</h2>
+        <ul>
+          <li>Weather</li>
+          <li>Data</li>
+          <li>Solution</li>
+        </ul>
+      </div>
+      <div id="ds-footer">
+        <p>Copyright</p>
+      </div>
+    </div>
+  </body>
+</html>
