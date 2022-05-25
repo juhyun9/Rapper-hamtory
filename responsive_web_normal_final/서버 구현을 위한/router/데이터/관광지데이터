@@ -1,0 +1,9 @@
+#월별 데이터 csv 가져오기
+# 
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+tourspot = pd.read_csv("C:/Users/User/Desktop/2022 1학기 캡스톤/관광지 (주소, 위도, 경도).csv", encoding='euc-kr')
+print(tourspot)
