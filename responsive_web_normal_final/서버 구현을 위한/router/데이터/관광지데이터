@@ -5,5 +5,5 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-tourspot = pd.read_csv("C:/Users/User/Desktop/2022 1학기 캡스톤/관광지 (주소, 위도, 경도).csv", encoding='euc-kr')
+tourspot = pd.read_csv('C:/Users/User/Documents/GitHub/Rapper-hamtory/responsive_web_normal_final/서버 구현을 위한/router/데이터/월별데이터/관광지.csv', encoding='utf-8')
 print(tourspot)

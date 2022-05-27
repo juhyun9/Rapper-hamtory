@@ -1,0 +1,63 @@
+#월별 데이터 csv 가져오기
+# 
+
+import csv
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+Jan = open('C:/Users/User/Documents/GitHub/Rapper-hamtory/responsive_web_normal_final/서버 구현을 위한/router/데이터/월별데이터/1.csv',
+                  encoding='utf-8')
+Feb = open('C:/Users/User/Documents/GitHub/Rapper-hamtory/responsive_web_normal_final/서버 구현을 위한/router/데이터/월별데이터/2.csv',
+                  encoding='utf-8')
+Mar = open('C:/Users/User/Documents/GitHub/Rapper-hamtory/responsive_web_normal_final/서버 구현을 위한/router/데이터/월별데이터/3.csv',
+                  encoding='utf-8')
+Apr = open('C:/Users/User/Documents/GitHub/Rapper-hamtory/responsive_web_normal_final/서버 구현을 위한/router/데이터/월별데이터/4.csv',
+                  encoding='utf-8')
+May = open('C:/Users/User/Documents/GitHub/Rapper-hamtory/responsive_web_normal_final/서버 구현을 위한/router/데이터/월별데이터/5.csv',
+                  encoding='utf-8')
+Jun = open('C:/Users/User/Documents/GitHub/Rapper-hamtory/responsive_web_normal_final/서버 구현을 위한/router/데이터/월별데이터/6.csv',
+                  encoding='utf-8')
+Jul = open('C:/Users/User/Documents/GitHub/Rapper-hamtory/responsive_web_normal_final/서버 구현을 위한/router/데이터/월별데이터/7.csv',
+                  encoding='utf-8')
+Aug = open('C:/Users/User/Documents/GitHub/Rapper-hamtory/responsive_web_normal_final/서버 구현을 위한/router/데이터/월별데이터/8.csv',
+                  encoding='utf-8')
+Sep = open('C:/Users/User/Documents/GitHub/Rapper-hamtory/responsive_web_normal_final/서버 구현을 위한/router/데이터/월별데이터/9.csv',
+                  encoding='utf-8')
+Oct = open('C:/Users/User/Documents/GitHub/Rapper-hamtory/responsive_web_normal_final/서버 구현을 위한/router/데이터/월별데이터/11.csv',
+                  encoding='utf-8')
+Nov = open('C:/Users/User/Documents/GitHub/Rapper-hamtory/responsive_web_normal_final/서버 구현을 위한/router/데이터/월별데이터/10.csv',
+                  encoding='utf-8')
+Dec = open('C:/Users/User/Documents/GitHub/Rapper-hamtory/responsive_web_normal_final/서버 구현을 위한/router/데이터/월별데이터/12.csv',
+                  encoding='utf-8')
+
+
+csv_list=[]
+csv_list.append(Jan)
+csv_list.append(Feb)
+csv_list.append(Mar)
+csv_list.append(Apr)
+csv_list.append(May)
+csv_list.append(Jun)
+csv_list.append(Jul)
+csv_list.append(Aug)
+csv_list.append(Sep)
+csv_list.append(Oct)
+csv_list.append(Nov)
+csv_list.append(Dec)
+
+csv_list_=[]
+for i in csv_list:
+    f=csv.reader(i)
+    csv_list_.append(f)
+
+
+All_list=pd.DataFrame(csv_list_)
+
+y2021=pd.concat([All_list])
+print(y2021)
+
+#for i in All_list:
+    #y2021=pd.concat([All_list])
+
+#data = open(y2021, sep=",")
